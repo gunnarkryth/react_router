@@ -12,6 +12,19 @@
     background-color: v.$primary;
     height: 90vh;
     color: v.$text;
+    section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+      article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+        background-color: v.$secondary;
+        padding: 1rem;
+      }
+    }
   }
 }
 footer {

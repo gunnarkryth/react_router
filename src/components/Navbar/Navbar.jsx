@@ -8,9 +8,7 @@ export const Navbar = () => {
       <ul>
         <li>
           <NavLink
-            style={({ isActive }) =>
-              isActive ? { color: "red" } : { color: "white" }
-            }
+            className={({ isActive }) => (isActive ? s.active : "")}
             to={"/"}
           >
             Home
@@ -19,9 +17,7 @@ export const Navbar = () => {
         <li>
           <NavLink
             to={"/about"}
-            style={({ isActive }) =>
-              isActive ? { color: "red" } : { color: "white" }
-            }
+            className={({ isActive }) => (isActive ? s.active : "")}
           >
             About
           </NavLink>
@@ -29,9 +25,7 @@ export const Navbar = () => {
         <li>
           <NavLink
             to={"/concepts"}
-            style={({ isActive }) =>
-              isActive ? { color: "red" } : { color: "white" }
-            }
+            className={({ isActive }) => (isActive ? s.active : "")}
           >
             Concepts
           </NavLink>
@@ -39,9 +33,7 @@ export const Navbar = () => {
         <li>
           <NavLink
             to={"/contact"}
-            style={({ isActive }) =>
-              isActive ? { color: "red" } : { color: "white" }
-            }
+            className={({ isActive }) => (isActive ? s.active : "")}
           >
             Contact us
           </NavLink>

@@ -1,13 +1,23 @@
+@use "../../assets/styles/Variables.module.scss" as v;
+
 .Navbar {
-  // height: 50px;
-  background-color: #030303;
+  box-shadow: 0 0 1rem black;
+  background-color: v.$secondary;
   padding: 1rem;
   ul {
     display: flex;
     justify-content: space-around;
     li {
+      list-style-type: none;
+
       a {
-        list-style-type: none;
+        text-decoration: none;
+        & {
+          color: v.$text;
+        }
+        &.active {
+          color: v.$accent;
+        }
       }
     }
   }

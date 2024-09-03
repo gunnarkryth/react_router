@@ -8,11 +8,11 @@ export const MainLayout = () => {
   return (
     <div className={s.MainLayout}>
       <Navbar />
-
-      <main>
-        <Outlet />
-      </main>
-
+      <div>
+        <main>
+          <Outlet />
+        </main>
+      </div>
       <Footer />
     </div>
   );
